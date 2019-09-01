@@ -17,7 +17,7 @@ namespace Email_Test.console
 
         public static void Main(string[] args)
         {
-            SendEmail();
+            GmailSender.SendEmail(emailFromAddress, password, emailToAddress, subject, body, null);
         }
 
         public static void SendEmail()
